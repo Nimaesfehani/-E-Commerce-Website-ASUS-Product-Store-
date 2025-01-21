@@ -1,0 +1,78 @@
+/* General Page Styling */
+body {
+    background-color: #2e2e2e;
+    font-family: "Audiowide", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Sign-Up Box */
+.signup-container {
+    background: linear-gradient(135deg, #555, #222);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+    width: 350px;
+    text-align: center;
+    border: 1px solid #666;
+}
+
+/* Title */
+.signup-container h2 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Label Styling */
+.signup-container label {
+    color: #ccc;
+    font-size: 14px;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Input Field Styling */
+.signup-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: border 0.3s ease;
+}
+
+/* Input Hover & Focus Effect */
+.signup-container input:focus {
+    border: 1px solid #bbb;
+}
+
+/* Button Styling */
+.signup-container button {
+    width: 100%;
+    padding: 12px;
+    background: #666;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effect */
+.signup-container button:hover {
+    background: #888;
+    transform: scale(1.05);
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASUS Vivobook S15</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="page.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="custom-header d-flex align-items-center justify-content-between px-4">
+      <div class="menu-icon">
+          <span></span>
+          <span></span>
+      </div>
+      <div class="logo">
+          <img src="D:\dars\CW\project\pics\logo.webp" alt="ASUS Logo">
+      </div>
+      <div class="cart-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Cart" width="24">
+      </div>
+  </header>
+
+  <div class="container py-5">
+    <h1 class="text-center mb-4">ASUS Zephyrus G16</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Carousel for Product Images -->
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="D:\dars\CW\project\pics\ze\2.jpeg" class="d-block w-100" alt="Product Image 1">
+            </div>
+            <div class="carousel-item">
+              <img src="D:\dars\CW\project\pics\ze\3.jpeg" class="d-block w-100" alt="Product Image 2">
+            </div>
+            <div class="carousel-item">
+              <img src="D:\dars\CW\project\pics\ze\1.jpeg" class="d-block w-100" alt="Product Image 3">
+            </div>
+            <div class="carousel-item">
+              <img src="D:\dars\CW\project\pics\ze\kv-hero.png" class="d-block w-100" alt="Product Image 4">
+            </div>
+            <div class="carousel-item">
+              <img src="D:\dars\CW\project\pics\ze\713yFn-2nqL._AC_SX679_.jpg" class="d-block w-100" alt="Product Image 5">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3>Product Specifications</h3>
+        <ul>
+          <li>Windows 11 pro</li>
+          <li>AMD Ryzen AI 9HX 370 Processer</li>
+          <li>The Zephyrus G16 has always been defined by its portability, and the 2024 model is no exception. This incredible gaming machine is a true thin-and-light, weighing in at just 1.85kg</li>
+          <li> 90Wh battery that supports fast charging from 0-50% in just 30 minutes</li>
+          <li>16" 2.5K 240 Hz OLED  display</li>
+        </ul>
+         <!-- Show More Button -->
+         <button id="showMoreBtn" class="custom-btn">Show More</button>
+         <div id="moreContent" class="hidden-content">
+          <h11>Beyond Fast</h11>
+          <p>Whether you are a gamer, a creator, or both, the Zephyrus G16 stands ready, equipped with up to an NVIDIA® GeForce RTX™ Laptop GPU. Boasting game changing features like DLSS 3 with Frame Generation, and the latest ray tracing enhancements, this machine offers unprecedented realism in modern games. NVIDIA® Advanced Optimus support allows for seamless transitioning between low power and low latency modes the moment a game is launched, and with a max TGP of 115W, the GPU is always allowed to fully flex its silicon muscles</p>
+          <u2>
+            <li>GeForce RTX 4090</li>
+            <li>Advanced Optimus</li>
+            <li>Max TGP 115W with Dynamic Boost</li>
+            <li>Creativity that is all in. NVIDIA Studio is your creative advantage with state-of-the-art RTX GPUs that power the world’s premiere creative apps</li>
+          </u2>
+      </div>
+         </div>
+        <h4 class="text-primary">$899.99</h4>
+        <a href="main-page.html" class="btn btn-secondary">Back to Products</a>
+
+        <!-- Like and Dislike Buttons -->
+        <div class="mt-3">
+          <button class="btn btn-success me-2" onclick="likeProduct()">👍 Like <span id="likeCount">0</span></button>
+          <button class="btn btn-danger" onclick="dislikeProduct()">👎 Dislike <span id="dislikeCount">0</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comment Box Section -->
+    <div class="mt-5">
+      <h3>Customer Reviews</h3>
+      <textarea id="commentBox" class="form-control" rows="3" placeholder="Write a comment..."></textarea>
+      <button class="btn btn-primary mt-2" onclick="addComment()">Submit</button>
+      <div id="commentsSection" class="mt-3"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="page.js"></script>
+  <script src="script.js"></script>
+  <script src="more.js"></script>
+
+</body>
+</html>
