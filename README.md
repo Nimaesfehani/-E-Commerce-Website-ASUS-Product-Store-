@@ -9,7 +9,7 @@ This is a fully responsive e-commerce website that showcases ASUS laptops, allow
 🎨 Interactive UI – Styled using Bootstrap and custom CSS animations.
 📱 Fully Responsive – Optimized for all screen sizes.
 📦 ASUS E-Commerce
-├── index.html          # Main homepage (not uploaded)
+
 ├── main-page.html      # Product listing page
 ├── product1.html       # ASUS Vivobook S15 product page
 ├── product2.html       # ASUS TUF Gaming A14 product page
@@ -23,6 +23,7 @@ This is a fully responsive e-commerce website that showcases ASUS laptops, allow
 ├── page.js             # Manages UI interactions and dropdowns
 ├── more.js             # "Show More / Show Less" functionality
 └── images/             # Folder for product images (not uploaded)
+
 📌 Pages Overview
 🏠 Main Page (main-page.html)
 Displays all available ASUS laptops.
